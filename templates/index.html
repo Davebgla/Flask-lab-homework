@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sal's Shop - My Orders</title>
+</head>
+<body>
+    <h1>Sals' Shop</h1>
+    {% for order in openOrders %}
+    <div>
+        <p>
+         <a href="/orders/{{number}}">{{order.customer_name}}: {{order.order_date}}: {{order.quantity}}: {{order.game_title}}</a>
+        </p>
+    </div>
+    {% endfor %}
+</body>
